@@ -13,7 +13,7 @@ Basically, run software by scanning the barcode with a compatible barcode scanne
 
 The barcode and runcommand are stored, as a CSV database, inside this script.
 
-The CSV lines are using hashtag as delimiter. (so the data can be added as a comment in the script and whit a hashtag we are flexible using many other charachters)
+The CSV lines are using hashtag as delimiter. (so the data can be added as a comment in the script and with a hashtag we are flexible using many other charachters)
 
 Data can simply be added inside this script.
 
@@ -21,6 +21,8 @@ Data can simply be added inside this script.
 # Needed devices :
 
 First of all you need a barcade scanner that can be used as a virtual keyboard.
+
+(BTW. if you don't have a barcode scanner you can just type the numbers of your barcode + enter)
 
 The bascode scanner I use is a Symbol CS4070 which is paired with bluetooth as a keyboard HID device.
 
