@@ -20,7 +20,7 @@
 #
 # Idea :
 # In the MagPi magazine 116 I read about someone that uses the raspberry pi as barcode scanner which is connected to a Mister-FPGA-board.
-# With this you can pick an original game out of the cupboard, scan the code on the game package and then the Mister-FPGA-board will emulate the game you just scanned.
+# With that project you can pick an original game out of the cupboard, scan the code on the game package and then the Mister-FPGA-board will emulate the game you just scanned.
 # The idea of this script is similar but it uses a separate barcode scanner and it loads the game on the Raspberry Pi instead.
 
 # Use : 
