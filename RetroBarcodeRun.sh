@@ -69,7 +69,7 @@ do
  file=$(awk "/#[0-9]/&&/$line/" $0|cut -d "#" -f5)
  system=$(awk "/#[0-9]/&&/$line/" $0|cut -d "#" -f3)
  [[ -n "$file" ]]&&[[ "$file" == *\/* ]]&&eval "/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ $system $file"
- echo $system $file; sleep 5
+ sleep 0.5
 done
 # --------------------------------------
 
