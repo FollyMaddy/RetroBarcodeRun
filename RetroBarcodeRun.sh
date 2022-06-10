@@ -113,7 +113,7 @@ done
 #4902704840066#msx#F-1 Spirit 3D Special -Konami Panasoft-#$HOME/RetroPie/roms/msx/BarcodeOriginals/
 #4988602541267#msx#King's Valley II El Giza's Seal,Konami#$HOME/RetroPie/roms/msx/BarcodeOriginals/kingval2.zip
 #4988602542059#msx#Kings Valley 2,Konamimsx2#$HOME/RetroPie/roms/msx/BarcodeOriginals/
-#4988602527230#msx#Metal Gear,Konami#"$HOME/RetroPie/roms/msx/BarcodeOriginals/mgear.zip"
+#4988602527230#msx#Metal Gear,Konami#$HOME/RetroPie/roms/msx/BarcodeOriginals/mgear.zip
 #4988602553932#msx#Metal Gear 2 Solid Snake,Konami#$HOME/RetroPie/roms/msx/BarcodeOriginals/mgear2ss.zip
 #4988602512755#msx#Qbert,Konami#$HOME/RetroPie/roms/msx/BarcodeOriginals/qbert.zip
 #4988602528787#msx#Usas,Konami#$HOME/RetroPie/roms/msx/BarcodeOriginals/usas.zip
