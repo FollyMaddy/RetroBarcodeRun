@@ -66,9 +66,10 @@ do
  clear
  echo "Scan your barcode or type a search entry : (exit with \"ctrl+c\")"
  read line
- file=$(awk "/#[0-9]/&&/$line/" $0|cut -d "#" -f5)
- system=$(awk "/#[0-9]/&&/$line/" $0|cut -d "#" -f3)
- [[ -n "$file" ]]&&[[ "$file" == *\/* ]]&&eval "/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ $system $file"
+ #awk "NR==1" is used to get only the first match
+ file=$(awk "/#[0-9]/&&/$line/" $0|awk "NR==1"|cut -d "#" -f5)
+ system=$(awk "/#[0-9]/&&/$line/" $0|awk "NR==1"|cut -d "#" -f3)
+ [[ -n "$file" ]]&&[[ "$file" == *\/* ]]&&[[ "$file" != *"\\n"* ]]&&eval "/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ $system $file"
  sleep 0.5
 done
 # --------------------------------------
@@ -112,7 +113,7 @@ done
 #4902704840066#msx#F-1 Spirit 3D Special -Konami Panasoft-#$HOME/RetroPie/roms/msx/BarcodeOriginals/
 #4988602541267#msx#King's Valley II El Giza's Seal,Konami#$HOME/RetroPie/roms/msx/BarcodeOriginals/kingval2.zip
 #4988602542059#msx#Kings Valley 2,Konamimsx2#$HOME/RetroPie/roms/msx/BarcodeOriginals/
-#4988602527230#msx#Metal Gear,Konami#$HOME/RetroPie/roms/msx/BarcodeOriginals/mgear.zip
+#4988602527230#msx#Metal Gear,Konami#"$HOME/RetroPie/roms/msx/BarcodeOriginals/mgear.zip"
 #4988602553932#msx#Metal Gear 2 Solid Snake,Konami#$HOME/RetroPie/roms/msx/BarcodeOriginals/mgear2ss.zip
 #4988602512755#msx#Qbert,Konami#$HOME/RetroPie/roms/msx/BarcodeOriginals/qbert.zip
 #4988602528787#msx#Usas,Konami#$HOME/RetroPie/roms/msx/BarcodeOriginals/usas.zip
