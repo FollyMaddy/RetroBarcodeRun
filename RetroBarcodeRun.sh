@@ -68,8 +68,8 @@ do
  read line
  file=$(awk "/#[0-9]/&&/$line/" $0|cut -d "#" -f5)
  system=$(awk "/#[0-9]/&&/$line/" $0|cut -d "#" -f3)
- [[ -n "$file" ]]&&[[ "$file" == *\/* ]]&&eval "/opt/retropie/supplementary/runcommand/runcommand.sh 0  SYS  $system $file"
- sleep 0.5
+ [[ -n "$file" ]]&&[[ "$file" == *\/* ]]&&eval "/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ $system $file"
+ echo $system $file; sleep 5
 done
 # --------------------------------------
 
@@ -86,7 +86,7 @@ done
 
 # Barcode UPC-A / can be generated with glabels or on "https://barcode.tec-it.com" (select EAN/UPC)
 
-# The CSV database (#barcode#runcommand)
+# The CSV database (#barcode#system#gamename#filename)
 
 #077000021427#atarilynx#Crystal Mines II#"$HOME/RetroPie/roms/atarilynx/BarcodeOriginals/Crystal Mines II (USA, Europe).lnx"
 #077000020642#atarilynx#Zarlor Mercenary#"$HOME/RetroPie/roms/atarilynx/BarcodeOriginals/Zarlor Mercenary (USA, Europe).lnx"
