@@ -4,7 +4,9 @@ In the MagPi magazine 116 I read about someone that uses the raspberry pi as bar
 
 With that project you can pick an original game out of the cupboard, scan the code on the game package and then the Mister-FPGA-board will emulate the game you just scanned.
 
-The idea of this script is similar but it uses a separate barcode scanner and it loads the game on the Raspberry Pi instead.
+The idea of this script is similar but it uses a separate barcode scanner and it loads the game on a linux OS instead.
+
+The script is meant for running games with emulators installed by RetroPie but it can work without it, depending on the data that's added.
 
 
 # Use : 
@@ -38,7 +40,7 @@ There are probably more obsolete barcode scanners around which can do this trick
 
   HIDSecurity=Low (connecting the device to a computer is easy now, no need to enter a pin code)
 
-  Suffix=1 (this will produce an enter after the barcode, so the procam will read the input)
+  Suffix=1 (this will produce an enter after the barcode, so the program will read the input)
 
   Save these setting on your CS4070.
 
